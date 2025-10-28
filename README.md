@@ -16,7 +16,8 @@ Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees b
 If you need expert assistance to enable Microsoft 365 Copilot Chat for students (13+) or employees in your organization, **contact [Petri.Paavola@yodamiitti.fi](mailto:Petri.Paavola@yodamiitti.fi)** for personalized support and guidance.
 
 **Petri Paavola**  
-Senior Modern Management Principal, Microsoft MVP – Windows and Intune  
+Senior Modern Management Principal  
+Microsoft MVP – Windows and Intune  
 Yodamiitti Oy
 
 ---
