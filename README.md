@@ -1,5 +1,9 @@
 # Microsoft 365 Copilot Chat (13+) configuration examples to IT Administrators in Schools and Enterprises
 
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1%20%7C%207.x-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees by configuring the AgeGroup attribute in Entra ID (Microsoft Graph). This guide includes quick manual commands and an automated script using a CSV source.
 
 > Note: For K12 scenarios where students are 13+, setting AgeGroup correctly (typically NotAdult) is required for Microsoft 365 Copilot Chat enablement.
