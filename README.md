@@ -8,6 +8,7 @@ Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees b
 
 > Note: For K12 scenarios where students are 13+, setting AgeGroup correctly (typically NotAdult) is required for Microsoft 365 Copilot Chat enablement.
 
+> Note: For Higher Edu scenarios we assume students are 18+ so there is no need to set AgeGroup to students.
 ---
 
 ## 🚀 Do you need Help Enabling Microsoft 365 Copilot Chat 13+? Tarvitsetko apua Copilot Chat 13+ käyttöönotossa?
