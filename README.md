@@ -97,10 +97,12 @@ Install-Module Microsoft.Graph.Authentication -Scope CurrentUser -Force
 Connect-MgGraph -Scopes "User.ReadWrite.All"
 
 # Test run without actual changes using -WhatIf parameter
+# Run this first to make sure CSV works
 ./Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1 -CsvFilePath "./oppilaat.csv" -AgeGroup "NotAdult" -WhatIf
 
 # Set AgeGroup to default value NotAdult for user in CSV file
-# Tämä on lähtökohtaisesti K12-koulujen komento
+# This is the primary command for K12 schools for 13+ students
+# After -WhatIf run below to few students first to test making actual change before running to large group of students
 ./Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1 -CsvFilePath "./oppilaat.csv"
 
 # Specify -AgeGroup to needed value
