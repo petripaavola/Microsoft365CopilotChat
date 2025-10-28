@@ -108,12 +108,25 @@ Try {
     Write-Host "Aloitetaan oppilaiden ikäryhmän asettaminen CSV-tiedoston perusteella.`nSkriptiversio $Version" -ForegroundColor Cyan
     Write-Host ""
 
+    # Add Author information
+    Write-Host "----------------------------------------" -ForegroundColor DarkCyan
+    Write-Host "  Author: Petri Paavola" -ForegroundColor White
+    Write-Host "  Email:  Petri.Paavola@yodamiitti.fi" -ForegroundColor White
+    Write-Host "  Senior Modern Management Principal" -ForegroundColor White
+    Write-Host "  Microsoft MVP - Windows and Intune" -ForegroundColor White
+    Write-Host "  Yodamiitti Oy" -ForegroundColor White
+    Write-Host "----------------------------------------" -ForegroundColor DarkCyan
+    Write-Host ""
+
+
     # Test csv-file exists
     if (-Not (Test-Path -Path $csvFilePath)) {
         Write-Host "CSV-tiedostoa ei löydy polusta: $csvFilePath" -ForegroundColor Red
         Stop-Transcript
         exit 1
     }
+
+    Write-Host "Ladataan oppilaat CSV-tiedostosta: $csvFilePath" -ForegroundColor White
 
     # Read CSV-file
     $students = Import-Csv -Path $csvFilePath -Encoding UTF8
@@ -133,7 +146,7 @@ Try {
     }
 
     $totalStudents = $students.Count
-    Write-Host "Löydettiin $totalStudents oppilasta CSV-tiedostosta" -ForegroundColor White
+    Write-Host "Löydettiin $totalStudents oppilasta CSV-tiedostosta" -ForegroundColor Green
     Write-Host ""
 
     Write-Host "Ladataan tarvittavat PowerShell-moduulit..." -ForegroundColor White
@@ -186,7 +199,7 @@ Try {
         # Get MgGraph connection status
         $connectionStatus = Get-MgContext
         if($connectionStatus) {
-            Write-Host "Yhteys Microsoft Graphiin muodostettu onnistuneesti." -ForegroundColor Green
+            Write-Host "Yhteys Microsoft Graph API:in muodostettu onnistuneesti." -ForegroundColor Green
             Write-Host "Yhteyden tiedot:" -ForegroundColor White
             Write-Host "  Käyttäjä: $($connectionStatus.Account)" -ForegroundColor White
             Write-Host "  Organisaatio: $($connectionStatus.TenantId)" -ForegroundColor White
@@ -201,7 +214,7 @@ Try {
             exit 1
         }
     } else {
-        Write-Host "Yhteyttä Microsoft Graphiin ei voida muodostaa. Varmista, että sinulla on tarvittavat käyttöoikeudet." -ForegroundColor Red
+        Write-Host "Yhteyttä Microsoft Graph API:in ei voida muodostaa. Varmista, että sinulla on tarvittavat käyttöoikeudet." -ForegroundColor Red
         Write-Host ""
         Write-Host "Skriptin suoritus päättyy." -ForegroundColor Cyan
 
