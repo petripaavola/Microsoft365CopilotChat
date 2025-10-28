@@ -101,9 +101,9 @@ Example `oppilaat.csv`:
 
 ```csv
 UserPrincipalName
-oppilas1@koulu.fi
-oppilas2@koulu.fi
-oppilas3@koulu.fi
+oppilas1.sukunimi1@koulu.fi
+oppilas2.sukunimi2@koulu.fi
+oppilas3.sukunimi3@koulu.fi
 ```
 
 Notes:
