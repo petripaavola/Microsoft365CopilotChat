@@ -1,4 +1,4 @@
-# Microsoft 365 Copilot Chat configuration examples to IT Administrators in Schools and Enterprises
+# Microsoft 365 Copilot Chat (13+) configuration examples to IT Administrators in Schools and Enterprises
 
 Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees by configuring the AgeGroup attribute in Entra ID (Microsoft Graph). This guide includes quick manual commands and an automated script using a CSV source.
 
