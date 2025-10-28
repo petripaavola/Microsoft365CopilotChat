@@ -7,12 +7,19 @@ Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees b
 ---
 
 ## Contents
+- Resources: PDF slides and YouTube video (placeholder)
 - Quick start: Manual update with PowerShell
-- Script: Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1
+- Script: [**Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1**](./Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1)
 - CSV requirements (oppilaat.csv) + example
 - Prerequisites and permissions
 - Troubleshooting
-- Resources: PDF slides and YouTube video (placeholder)
+
+---
+## Resources
+<!-- Clickable image preview that links to the PDF -->
+[![PDF Preview – Microsoft 365 Copilot Chat käyttöönotto 13+ oppilaille.pdf](docs/PDF-Preview.png)](/docs/Microsoft%20365%20Copilot%20Chat%20käyttöönotto%2013%2B%20oppilaille.pdf)
+
+- PDF (slides exported from PowerPoint presentation): [Microsoft 365 Copilot Chat käyttöönotto 13+ oppilaille.pdf](/docs/Microsoft%20365%20Copilot%20Chat%20käyttöönotto%2013%2B%20oppilaille.pdf)
 
 ---
 
@@ -124,14 +131,6 @@ Notes:
 - Ensure you’re connected: `Get-MgContext` should return your account and tenant
 - Verify the CSV path and that the file contains the `UserPrincipalName` header
 - For dry-run testing, use `-WhatIf` first to confirm the scope of changes
-
----
-
-## Resources
-<!-- Clickable image preview that links to the PDF -->
-[![PDF Preview – Microsoft 365 Copilot Chat käyttöönotto 13+ oppilaille.pdf](docs/pdf-preview.svg)](/docs/Microsoft 365 Copilot Chat käyttöönotto 13+ oppilaille.pdf)
-
-- PDF (slides exported from PowerPoint): [Direct PDF link](/docs/Microsoft 365 Copilot Chat käyttöönotto 13+ oppilaille.pdf)
 
 ---
 
