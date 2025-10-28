@@ -7,7 +7,7 @@ Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees b
 ---
 
 ## Contents
-- Resources: PDF slides and YouTube video (placeholder)
+- Resources: PDF slides
 - Quick start: Manual update with PowerShell
 - Script: [**Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1**](./Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1)
 - CSV requirements (oppilaat.csv) + example
