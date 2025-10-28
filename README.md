@@ -35,6 +35,9 @@ Connect-MgGraph -Scopes "User.ReadWrite.All"
 
 # Update single user/student AgeGroup value
 Update-MgUser -UserId "etunimi.sukunimi@koulu.fi" -AgeGroup "NotAdult"
+
+# Disconnect from Microsoft Graph API
+Disconnect-MgGraph
 ```
 
 Supported AgeGroup values (as used by Microsoft Graph Users API):
