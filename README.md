@@ -23,7 +23,7 @@ Make Microsoft 365 Copilot Chat work smoothly for students (K12) and employees b
 
 ---
 
-## Quick start: Manual update with PowerShell
+## Quick start: Manual AgeGroup property update with PowerShell command
 Run the following commands in a PowerShell session (no admin needed for module install with -Scope CurrentUser):
 
 ```powershell
