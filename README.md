@@ -76,6 +76,8 @@ Supported AgeGroup values (as used by Microsoft Graph Users API):
 ## Script: `Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1`
 This script updates the AgeGroup for many users based on a CSV file containing a `UserPrincipalName` column.
 
+> Note: Read script, test script, test with test account first and validate script functionality in your environment before running in production.
+
 <!-- Clickable image preview for script screenshot -->
 <a href="/docs/Set-StudentAgeGroupUsingCsvFileAsSourceData-Screenshot.png">
     <img src="docs/Set-StudentAgeGroupUsingCsvFileAsSourceData-Screenshot.png" alt="Script Screenshot – Set-StudentAgeGroupUsingCsvFileAsSourceData.ps1" width="1000"/>
