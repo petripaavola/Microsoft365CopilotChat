@@ -51,6 +51,13 @@ Connect-MgGraph -Scopes "User.ReadWrite.All"
 # Update single user/student AgeGroup value
 Update-MgUser -UserId "etunimi.sukunimi@koulu.fi" -AgeGroup "NotAdult"
 
+# Update single user/student AgeGroup value
+Update-MgUser -UserId "etunimi2.sukunimi2@koulu.fi" -AgeGroup "NotAdult"
+
+# Run this command as many times needed.
+# You can export students' email addresses from student management system and create these commands for example in Excel
+# And then just copy paste created commands to PowerShell console to make change to multiple students
+
 # Disconnect from Microsoft Graph API
 Disconnect-MgGraph
 ```
