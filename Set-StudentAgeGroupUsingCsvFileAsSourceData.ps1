@@ -115,6 +115,7 @@ Try {
     Write-Host "  Senior Modern Management Principal" -ForegroundColor White
     Write-Host "  Microsoft MVP - Windows and Intune" -ForegroundColor White
     Write-Host "  Yodamiitti Oy" -ForegroundColor White
+    Write-Host "  Link: https://github.com/petripaavola/Microsoft365CopilotChat" -ForegroundColor White
     Write-Host "----------------------------------------" -ForegroundColor DarkCyan
     Write-Host ""
 
