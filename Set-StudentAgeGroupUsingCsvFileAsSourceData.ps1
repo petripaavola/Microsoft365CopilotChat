@@ -120,6 +120,31 @@ Try {
     Write-Host ""
 
 
+    # Show warning for Minor age group
+    # Minor AgeGroup requires also 'Consent provided for minor' to be set to Granted (or Not required)
+    # otherwise Entra-related services may not work properly (or may not work at all) for Minor users
+    if ($AgeGroup -eq "Minor") {
+        Write-Host ""
+        Write-Host "VAROITUS: Olet asettamassa ikäryhmää 'Minor'." -ForegroundColor Yellow
+        Write-Host "Tämä asetus vaatii lisäksi, että huoltajan suostumus on annettu (Consent provided for minor = Granted) kyseisille käyttäjille." -ForegroundColor Yellow
+        Write-Host "Tämä skripti ei tällä hetkellä aseta huoltajan suostumusta käyttäjille." -ForegroundColor Yellow
+        Write-Host "Jos jatkat skriptiä eteenpäin, niin Minor-käyttäjiin liittyvät Entra-liittännäiset palvelut saattavat toimia puutteellisesti" -ForegroundColor Yellow
+        Write-Host "tai eivät toimi lainkaan ilman asianmukaista huoltajan suostumusta." -ForegroundColor Yellow
+        Write-Host "Jatka skriptiä vain, jos sinulla on olemassa tarvittavat toimenpiteet huoltajan suostumuksen asettamiseksi käyttäjille." -ForegroundColor Yellow
+        Write-Host ""
+        $confirmation = Read-Host "Haluatko varmasti jatkaa skriptiä? (K/E)"
+        if ($confirmation -ne "K") {
+            Write-Host "Toiminto peruutettu käyttäjän toimesta." -ForegroundColor Yellow
+            Write-Host ""
+            Write-Host "Skriptin suoritus päättyy." -ForegroundColor Cyan
+            Stop-Transcript
+            exit 0
+        } else {
+            Write-Host "Jatketaan skriptiä käyttäjän toimesta." -ForegroundColor Green
+            Write-Host ""
+        }
+    }
+
     # Test csv-file exists
     if (-Not (Test-Path -Path $csvFilePath)) {
         Write-Host "CSV-tiedostoa ei löydy polusta: $csvFilePath" -ForegroundColor Red
